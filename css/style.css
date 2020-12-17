@@ -50,3 +50,7 @@ header {
   color: white;
   margin-top: 10px;
 }
+
+.album-author-year {
+  color: grey;
+}
