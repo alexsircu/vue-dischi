@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>Album da API</title>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="Logo Spotify" id="spotify-logo">
+      </header>
+
+      <div id="container">
+        <div v-for="album in albumArray" class="album-container">
+          <img :src="album.poster" :alt="album.title" class="album-logo">
+          <h3 class="album-title">
+            {{album.title}}
+          </h3>
+          <div class="album-author">
+            {{album.author}}
+          </div>
+          <div class="album-year">
+            {{album.year}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
