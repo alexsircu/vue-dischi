@@ -54,3 +54,12 @@ header {
 .album-author-year {
   color: grey;
 }
+
+#select-container {
+  display: flex;
+  justify-content: space-around;
+
+  width: 12%;
+  padding-top: 50px;
+  margin: auto;
+}

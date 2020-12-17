@@ -26,7 +26,16 @@
           </div>
         </div>
       </div>
+
+      <div id="select-container">
+        <label for="genre">Scegli un genere</label>
+        <select class="" name="genre" v-model="selectedGenre" @change="selectGenre">
+          <option value="">All</option>
+          <option v-for="genre in newGenre">{{genre}}</option>
+        </select>
+      </div>
     </div>
+
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
